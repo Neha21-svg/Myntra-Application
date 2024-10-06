@@ -1,0 +1,110 @@
+Project Name,Myntra,,,,,,,,,
+Module Name,Login,,,,,,,,,
+Reference Document,FRS,,,,,,,,,
+Created By,Neha ,,,,,,,,,
+Date of Creation,17-08-2024,,,,,,,,,
+Date of Review,19-08-2024,,,,,,,,,
+Test cases ID,Test scenario,Test cases,Pre condition,Test steps,Test data,Expected result,Actual Result,Status,Comment,Executed By
+TC_LF_001,To verify login functionality,Verify login functionality by entering valid mobile number and vaild OTP,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Enter valid OTP","Mob no.-8879045628
+OTP-885673",User should be able to login,User should be able to login,Pass,,Neha Kumari
+TC_LF_002,To verify login functionality,Verify login functionality by entering valid mobile number and invaild OTP,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Enter invalid OTP","Mob no.-8879045628
+OTP-000000",Proper error message should be displayed,User is unable to register,Pass,,
+TC_LF_003,To verify login functionality,Verify login functionality by entering valid mobile only,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter invalid mobile number
+3) Click on request OTP
+",Mob no.-8879045628,Proper error message should be displayed,,,,
+TC_LF_004,To verify login functionality,Verify login functionality by don't entering mobile number,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Don't enter mobile no.
+3) Click on request OTP
+",,Proper error message should be displayed,,,,
+TC_LF_005,To verify login functionality,Verify login functionality by entering valid mobile number and keeping OTP section blank,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Don't enter any data in OTP text field
+5) Click on verify button",Mob no.-8879045628,Proper error message should be displayed,User is unable to register,Pass,,
+TC_LF_006,To verify login functionality,Verify login functionality by entering deactive mobile no.,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter deactive valid mobile number
+",Mob no.678846376,Not able to get login,Not able to login,Pass,,
+TC_LF_007,To verify login functionality,Verify login functionality by entering invalid mobile number,"1) Open the browser
+2) Enter the URL","1) Click on login otion
+2) Enter invalid mobile no.
+3) Click on request OTP ",Mob no.-9787067644,Proper error message should be displayed,,,,
+TC_LF_008,To verify login functionality,Verify request for OTP is working fine,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+",Mob no.-8879045628,Request OTP should works properly,It is working properly,Pass,,
+TC_LF_009,To verify login functionality,Verify the OTP resend option is working fine,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Click on resend OTP",Mob no.-8879045628,OTP must be recived twice,It is received,Pass,,
+TC_LF_010,To verify login functionality,Verify mobile no. text field has a placeholder or not,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Check mobile no. has a placeholder or not.",,It should be there,It is there,Pass,,
+TC_LF_011,To verify login functionality,Verify login functionality by entering invalid mobile number by multiple attempt,"1) Open the browser
+2) Enter the URL","1) Click on login function
+2)Enter mobile no. with inactive credentials",Mob no.-8879045628,User should not be loged in,User is not anle to login,Pass,,
+TC_LF_012,To verify login functionality,Verify login functionality by entering mobile no. more than 10 digits,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter mobile no. with more than 10 digits",Mob no.-8879045628,User should not be able to enter more than 10 digits,User is not able to enter more than 10 digits,Pass,,
+TC_LF_013,To verify login functionality,Verify login functionality by log in using password,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Cilck on log in using password
+5) Enter  valid mobile number and password
+6) Click on login","Mob no.-8879045628
+Password-123@abc",User should be able to login,User is able to login,Pass,,
+TC_LF_014,To verify login functionality,Verify timeout of the login session,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile no.
+3) Click on request OTP
+4) Enter valid OTp
+5) Wait for more than 30 minutes without performing anything on application
+6) Perform some action on application","Mob no.-8879045628
+Password-123@abc",User should logged out with proper message ,User is not logged out,Fail,,
+TC_LF_015,To verify login functionality,Enter invalid mobile no. for multiple time,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter invalid mobile number in mobilr no. text field",Mob no.-752974978,User should get proper error message retry after some time,User is getting proper error message,Pass,,
+TC_LF_016,To verify login functionality,Verify login page functionality in all the supported enviroments,"1) Open the browser
+2) Enter the URL","1) Click on 'My account ' Dropmenu
+2) Click on ""Login "" option",NA,Works correctly in all the supported enviroment,,Pass,,
+TC_LF_017,To verify login functionality,Verify login from multiple devices simultaneously,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Enter valid OTP
+5) Do same procedure on other device","Mob no.-8879045628
+Password-123@abc",User shoud able to login on other devices,User is able to do,Pass,,
+TC_LF_018,To verify login functionality,Verify the time taken to login with a valid credentials,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Enter valid OTP
+","Mob no.-8879045628
+Password-123@abc",User should logged in just seconds,User is logged in few seconds,Pass,,
+TC_LF_019,To verify login functionality,Verify if there is cancle button available to erase the entered text,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter invalid mobile number
+","Mob no.-8879045628
+",There should be a cancle button,There is no cancel button,Fail,,
+TC_LF_020,To verify login functionality,Verify the login page and its control in different browsers,"1) Open the browser
+2) Enter the URL","1) Click on login option
+2) Enter valid mobile number
+3) Click on request OTP
+4) Enter valid OTP
+","Mob no.-8879045628
+Password-123@abc",User should easily loggedin,User is easily logged in,Pass,,
