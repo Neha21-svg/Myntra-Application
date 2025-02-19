@@ -7,8 +7,6 @@ User Login with Email and Password
 
 Social Media Login (Google, Facebook, etc.)
 
-Forgot Password Functionality
-
 Validation Messages for Incorrect Credentials
 
 # Testing Scope
